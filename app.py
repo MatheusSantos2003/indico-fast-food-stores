@@ -4,7 +4,7 @@ from flask_migrate import Migrate
 from extensions.routes_extension import register_routes
 from extensions.exception_extension import register_exception_handler
 from werkzeug.exceptions import HTTPException
-from models import db
+from apps.stores.models import db
 
 
 def create_app():

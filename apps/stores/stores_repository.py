@@ -1,4 +1,4 @@
-from models import db, Store
+from apps.stores.models import db, Store
 import pandas as pd
 
 

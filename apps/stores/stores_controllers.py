@@ -54,7 +54,7 @@ def get_store(store_id):
     if not store:
         return abort(404,description="Store not found")
 
-    return jsonify(store), 200
+    return jsonify(store_serializers(store)), 200
 
 
 @stores_bp.route('/create', methods=['POST'])
